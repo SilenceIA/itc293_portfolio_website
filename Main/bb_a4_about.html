@@ -1,0 +1,90 @@
+<!--
+    Document: bb_a4_about.html
+    Author: Blake Brouff
+	Student ID: 11596992
+    Date: May 2025
+    Description: About me page for my fictitious financial web developer portfolio website.
+-->
+	
+<!DOCTYPE html>  <!--Define the HTML Doc Type -->
+<html lang="en"> <!--Define the HTML language -->
+
+<!-- Head section of the HTML document -->
+<head>
+    <!-- Characterset specified as UTF-8 -->
+	<meta charset="UTF-8"> 
+	
+    <!-- Webapge Title -->
+	<title>About Blake</title> 
+
+    <!-- Link External CSS Sheet -->
+    <link rel="stylesheet" href="CSS/portfolio.css">
+
+    <!-- Internal CSS Code -->
+    <style>
+		/* Custom CSS Style for buttons */
+        .bio-text {
+			color: blue;
+			font-size: 1.15em;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Portfolio of Blake Brouff</h1>
+		<img src="Images/Headshot.jpg" alt="My headshot" class="headshot">
+		<img src="Images/logo.png" alt="My Logo" class="logo">
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <button class="nav-button" onclick="location.href='bb_a4_index.html'">Home</button>
+        <button class="nav-button" onclick="location.href='bb_a4_resume.html'">Resume</button>
+        <button class="nav-button" style="background-color: coral;" onclick="location.href='bb_a4_about.html'">About</button> <!-- Custom colour to denote current page -->
+        <button class="nav-button" onclick="location.href='bb_a4_web_skills.html'">Web Skills</button>
+        <button class="nav-button" style="background-color: orangered;"
+            onclick="window.open('bb_a4_newsletter_signup.html','page','location=0,toolbar=0,resizable=no,height=640px,width=720px')">Signup to the Newsletter</button>  <!-- Custom colour to denote newsletter page -->
+    </nav>
+    <nav>
+        <button class="nav-button" onclick="location.href='bb_a4_cybersecurity.html'">Cybersecurity</button>
+        <button class="nav-button" onclick="location.href='bb_a4_data_visualisation.html'">Data Visualisation</button>
+        <button class="nav-button" onclick="location.href='bb_a4_database_management.html'">Database Management</button>
+        <button class="nav-button" onclick="location.href='bb_a4_website_development.html'">Website Development</button>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <section class="about-section">
+            <h2>Personal Background</h2>
+            <p class="bio-text">
+                I am a professional web development for financial institutions, business and customers. I build unique, user-friendly and highly valuable solutions.
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h2>My Values</h2>
+            <p>
+				My top 2 values are,
+			</p>
+			<ol>
+                <li>Integrity</li>
+                <li>Commitment to Excellence</li>
+			</ol>
+			<p>
+				Other values I possess include,
+			</p>
+			<ul>
+                <li>Continuous Learning</li>
+                <li>Collaboration and Teamwork</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 - Blake Brouff. All rights reserved.</p>
+    </footer>
+</body>
+</html>

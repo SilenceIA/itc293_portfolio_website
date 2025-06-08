@@ -1,0 +1,90 @@
+<!--
+    Document: bb_a4_cybersecurity.html
+    Author: Blake Brouff
+	Student ID: 11596992
+    Date: May 2025
+    Description: Web Development Skills page for my fictitious financial web developer portfolio website.
+-->
+	
+<!DOCTYPE html>  <!--Define the HTML Doc Type -->
+<html lang="en"> <!--Define the HTML language -->
+
+<!-- Head section of the HTML document -->
+<head>
+    <!-- Characterset specified as UTF-8 -->
+	<meta charset="UTF-8"> 
+	
+    <!-- Webapge Title -->
+	<title>Cybersecurity Skillset</title> 
+
+    <!-- Link External CSS Sheet -->
+    <link rel="stylesheet" href="CSS/portfolio.css">
+
+    <!-- Internal CSS Code -->
+    <style>
+        /* Specific CSS Style for Introductory paragraph */
+        .skills-list { 
+            color: black;
+			font-size: 1.15em;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+	<header>
+		<h1>Cybersecurity Skillset</h1>
+		<img src="Images/Headshot.jpg" alt="My headshot" class="headshot">
+		<img src="Images/logo.png" alt="My Logo" class="logo">
+	</header>
+
+        <!-- Navigation Bar -->
+        <nav>
+        <button class="nav-button" onclick="location.href='bb_a4_index.html'">Home</button>
+        <button class="nav-button" onclick="location.href='bb_a4_resume.html'">Resume</button>
+        <button class="nav-button" onclick="location.href='bb_a4_about.html'">About</button>
+        <button class="nav-button" onclick="location.href='bb_a4_web_skills.html'">Web Skills</button> <!-- Custom colour to denote current page -->
+        <button class="nav-button" style="background-color: orangered;"
+            onclick="window.open('bb_a4_newsletter_signup.html','page','location=0,toolbar=0,resizable=no,height=640px,width=720px')">Signup to the Newsletter</button>  <!-- Custom colour to denote newsletter page -->
+    </nav>
+    <nav>
+        <button class="nav-button" onclick="location.href='bb_a4_cybersecurity.html'" style="background-color: coral;">Cybersecurity</button>
+        <button class="nav-button" onclick="location.href='bb_a4_data_visualisation.html'">Data Visualisation</button>
+        <button class="nav-button" onclick="location.href='bb_a4_database_management.html'">Database Management</button>
+        <button class="nav-button" onclick="location.href='bb_a4_website_development.html'">Website Development</button>
+    </nav>
+        <!-- Main Content Section -->
+        <div class="container">
+            <section>
+                <h3>Why Cybersecurity Matters in Finance</h3>
+                <p>
+                    Financial data is highly valuable and sought after by cybercriminals.
+                </p>
+                <p>
+                    I have worked with clients to protect sensitive information and prevent fraud through implementing strong cybersecurity practices.
+                </p>
+            </section>
+            <section>
+                <h3>Key Cybersecurity Skills</h3>
+                <ul>
+                    <li>Setting up secure passwords and multi-factor authentication</li>
+                    <li>Recognising phishing emails and scams</li>
+                    <li>Encrypting sensitive customer data</li>
+                    <li>Regularly updating software to patch vulnerabilities</li>
+                    <li>Monitoring systems for suspicious activity</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Prior Project: Secure Login Page</h3>
+                <p>
+                    I created a secure login page for our finance portal using HTTPS, password hashing, and account lockout after failed attempts.
+                </p>
+            </section>
+        </div>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 - Blake Brouff. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

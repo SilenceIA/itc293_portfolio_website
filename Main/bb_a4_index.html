@@ -1,0 +1,161 @@
+<!--
+    Document: bb_a4_index.html
+    Author: Blake Brouff
+	Student ID: 11596992
+    Date: May 2025
+    Description: Home page for the fictitious financial web developer portfolio website.
+-->
+	
+<!DOCTYPE html>  <!--Define the HTML Doc Type -->
+<html lang="en"> <!--Define the HTML language -->
+
+<!-- Head section of the HTML document -->
+<head>
+    <!-- Characterset specified as UTF-8 -->
+	<meta charset="UTF-8"> 
+	
+    <!-- Webapge Title -->
+	<title>Portfolio Homepage</title> 
+
+    <!-- Link External CSS Sheet -->
+    <link rel="stylesheet" href="CSS/portfolio.css">
+
+    <!-- Internal CSS Code -->
+    <style>
+        /* Specific CSS Style for Introductory paragraph */
+        .intro-text { 
+            color: blue;
+			font-size: 1.15em;
+            margin-bottom: 20px;
+        }
+
+		/* Custom CSS Style for buttons */
+        .button {
+            background-color: coral;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none; /* Prevent inherited underline */
+            border-radius: 5px; /* Corner Radius of Buttons */
+            display: inline-block; /* Display the buttons as inline block elements */
+            margin: 10px 0px 20px 0px; /* Set the margin around the button */
+        }
+			/* Set Button colour when being hovered over */
+            .button:hover {
+                background-color: darkgrey;
+            }
+    </style>
+</head>
+<body>
+    
+    <!-- Section for the Header -->
+    <header>
+        <h1>Portfolio of Blake Brouff</h1>
+		<img src="Images/Headshot.jpg" alt="My headshot" class="headshot">
+		<img src="Images/logo.png" alt="My Logo" class="logo">
+    </header>
+
+    <!-- Navigation Bar for navigating to other pages -->
+    <nav>
+        <button class="nav-button" style="background-color: coral;" onclick="location.href='bb_a4_index.html'">Home</button> <!-- Custom colour to denote current page -->
+        <button class="nav-button" onclick="location.href='bb_a4_resume.html'">Resume</button>
+        <button class="nav-button" onclick="location.href='bb_a4_about.html'">About</button>
+        <button class="nav-button" onclick="location.href='bb_a4_web_skills.html'">Web Skills</button>
+        <button class="nav-button" style="background-color: orangered;"
+            onclick="window.open('bb_a4_newsletter_signup.html','page','location=0,toolbar=0,resizable=no,height=640px,width=720px')">Signup to the Newsletter</button>  <!-- Custom colour to denote newsletter page -->
+    </nav>
+    <nav>
+        <button class="nav-button" onclick="location.href='bb_a4_cybersecurity.html'">Cybersecurity</button>
+        <button class="nav-button" onclick="location.href='bb_a4_data_visualisation.html'">Data Visualisation</button>
+        <button class="nav-button" onclick="location.href='bb_a4_database_management.html'">Database Management</button>
+        <button class="nav-button" onclick="location.href='bb_a4_website_development.html'">Website Development</button>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container">
+		<!--Section for Introducuing myself -->
+        <section>
+            <h2>Introduction</h2>
+            <p class="intro-text">
+                My portfolio is an encompass of my abilities, skills and achievements!<br><br>I am Blake Brouff, a professional web developer for financial institituations, products and more. Here within this portfolio you will find information about my background, my web development skills, and my professional experience working in the finance sector.
+            </p>
+            <p>
+                Feel free to explore the sections below to learn more about me. Whether my resume, learning more about me, or my web development skills. Please reach out using the information on my About page.<br>Looking forward to being in-touch.
+            </p>
+        </section>
+
+        <!-- Career Section - Brief Career overview -->
+        <section>
+            <h2>Career in Finance</h2>
+            <p>
+                A have a long career of 15 years in web development and software development pursuits in the financial sector. My profesional experterise started small, but expontentially grew as I demonstrated key skill, attention to detail and a nack for numbers.
+            </p>
+			<!-- Button for navigating to my Resume webpage -->
+            <a href="bb_a4_resume.html" class="button">View my Resume</a>
+        </section>
+
+        <!-- Skillset Summary -->
+        <section>
+            <h2>Core Skills</h2>
+            <p>
+                I have 4 key skillsets suitable for the finance sector:
+            </p>
+			<!-- Button for navigating to my Resume webpage -->
+            <a href="bb_a4_cybersecurity.html" class="button">Cybersecurity</a>
+            <a href="bb_a4_data_visualisation.html" class="button">Data Visualisation</a>
+            <a href="bb_a4_database_management.html" class="button">Database Management</a>
+            <a href="bb_a4_website_development.html'" class="button">Website Development</a>
+        </section>
+
+		<!--About Me Section - Brief section on who I am and what you should know about me. -->
+        <section>
+            <h2>Getting to know me</h2>
+			<p>
+				I am Blake, an enthusiastic web developer in the finance sector. But, who am I?
+			</p>
+			<ul>
+				<li>How did my Journey lead me here?</li>
+				<li>Where did it start?</li>
+				<li>Where am I now?</li>
+			</ul>
+			<p>
+				Jump on over and visit the About Me page to read more about my background, values, and professional ethics.
+            </p>
+            <!-- Button to navigate to About Me webpage-->
+            <a href="ass2_about.html" class="button">Learn more About Me</a>
+        </section>
+
+		<!-- Web Skills Section - Brief summary of what my webskills are -->
+        <section>
+            <h2>So what are my skills?</h2>
+            <p>
+                I am a continious learning seeking challenge and prestige in my work. I continue to ehance my skills, broaded my knowledge and eager to build business solutions and products.<br>Some key skills include:
+            </p>
+			<ol>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>Javascript</li>
+			</ol>
+			<br>
+			<!-- Button to navigate to my Web Skills webpage -->
+				<a href="ass2_web_skills.html" class="button">Explore my Web Skills</a>
+        </section>
+		
+		<!-- Section for Copyright Notice -->
+		<section>
+			<h2> Copyright Notice </h2>
+			<p>
+				All content on this site, including text and images, is either original, used with permission, or I have the right to use.
+			</p>
+			<p>
+				The logo is generated using ChatGPT and is used in accordance with the respective terms of service.<br>
+				OpenAI do not claim copyright over generated images, and permit reuse of images.<br><br>
+				<b>Contact Details:</b> blake@financialfictitious.com.au &nbsp;|&nbsp; +123456789
+			 </p>
+		</section>
+	</div>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 - Blake Brouff. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,276 @@
+/* ITC293 Ass4 - Financial Portfolio Website CSS 
+    Written by: Blake Brouff
+    Student ID: 11596992
+	Date: May 2025
+*/
+
+/* Global Styles (Applied across the entire webpage) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+	text-align: center;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Footer Styles (Define webpage header) */
+header {
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    padding: 5px 0px;
+}
+
+footer {
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    bottom: 0px;
+    width: 100%;
+}
+
+/* Defining how my headshot should look */
+.headshot { 
+	position: fixed;
+	top: 15px;
+	left: 30px; 
+	width: 150px;
+	height: auto;
+	border-radius: 40%;
+}
+
+/* Defining how the logo should look */
+.logo { 
+	position: fixed;
+	top: 15px;
+	right: 30px; 
+	width: 160px;
+	height: auto;
+}
+
+/* Navigation Bar (Define the navigation bar) */
+nav {
+	background-color: lightsteelblue;
+	padding: 10px;
+	text-align: center;
+}
+
+/* Define formatting for navigation buttons */
+nav button {
+	border: none;
+	background-color: lightsteelblue;
+	font-size: 1em;
+}
+.nav-button {
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px 20px;
+	display: inline-block;
+}
+
+.nav-button:hover {
+	background-color: darkgrey;
+}
+
+/* Content Layout */
+.container {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+	background-color: white;
+}
+
+/* Paragraph Styling */
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Font Styling */
+h1 {
+    font-family: Arial, sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 2em;
+    color: teal;
+    text-decoration: none;
+}
+
+h2 {
+    font-family: "Arial Black", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.75em;
+    color: navy;
+    text-decoration: overline;
+}
+
+h3 {
+    font-family: "Arial Narrow", sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 1.5em;
+    color: lightseagreen;
+}
+
+p {
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-size: 1em;
+}
+
+/* Lists Styling */
+ul {
+    list-style-type: square;
+	display: inline-block;
+	text-align: left;
+	
+}
+
+ol {
+    list-style-type: upper-roman;
+	display: inline-block;
+	text-align: left;
+}
+
+/* Table formatting to apply border */
+table, th, td {
+	border-spacing: 10px;
+	padding: 8px;
+	border-collapse: collapse;
+	border: 1px solid;
+}
+
+/* ID and Class Selectors */
+#highlight {
+    color: gold;
+    font-weight: bold;
+}
+
+#featured {
+    background-color: aliceblue;
+    padding: 10px;
+    border-left: 5px solid blue;
+}
+
+.important-text {
+    color: lightcoral;
+    font-style: italic;
+}
+
+/* Div and Span Usage */
+header > h1 {
+    width: 60%;
+    color: white;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3em;
+    
+}
+
+.div-box {
+    background-color: lightgrey;
+    padding: 20px;
+    color: teal;
+}
+
+span.highlight-text {
+    background-color: lightseagreen;
+    padding: 2px 5px;
+    font-weight: bold;
+}
+
+/* Print-friendly styles */
+@media print {
+	
+  /* Configure page settings */
+  @page {
+	size: A4;
+  }
+  
+  /* Ensure the container uses the full width of the page */
+  .container {
+	  width: 100% !important;
+	  margin: 0 !important;
+	  padding: 0 !important;
+  }
+	
+  /* Hide the navigation bar from print*/
+  nav, nav * {
+    display: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+  }
+
+  /* Remove the background colors and images from print */
+  body, .container, header, footer {
+    background: none !important;
+    background-color: transparent !important;
+    color: black !important;
+	margin-top: 0px !important;
+  }
+  
+  /* Specify header formatting to prevent issue with "display background graphics" */
+  header > h1, header h1 {
+    color: black !important;
+    background: none !important;
+    background-color: transparent !important;
+  }
+
+  /* Remove the background from any highlighted elements */
+  #featured, .div-box, span.highlight-text {
+    background: none !important;
+    background-color: transparent !important;
+  }
+
+  /* Increase the font sizes on the webpage for readability */
+  body, p {
+    font-size: 1.2em !important; /* Default = 1em*/
+  }
+  h1 {
+    font-size: 2.2em !important; /* Default = 2em*/
+  }
+  h2 {
+    font-size: 1.7em !important; /* Default = 1.5em*/
+  }
+  h3 {
+    font-size: 1.7em !important; /* Default = 1.5em*/
+  }
+
+  /* Hide all images from the print */
+  img {
+    display: none !important;
+  }
+
+  /* Remove all print-unfriendly effects such as the box shadows, borders etc.*/
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    border: none !important;
+  }
+}
+
+ /* CSS for Newsletter */
+
+ .newsletter_bold {
+    font-weight: bold;
+    color: darkblue;
+ }
+
+ .newsletter_form {
+    text-align: left !important;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%
+ }

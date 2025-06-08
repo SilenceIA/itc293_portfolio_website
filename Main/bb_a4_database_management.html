@@ -1,0 +1,89 @@
+<!--
+    Document: bb_a4_database_management.html
+    Author: Blake Brouff
+	Student ID: 11596992
+    Date: May 2025
+    Description: Web Development Skills page for my fictitious financial web developer portfolio website.
+-->
+	
+<!DOCTYPE html>  <!--Define the HTML Doc Type -->
+<html lang="en"> <!--Define the HTML language -->
+
+<!-- Head section of the HTML document -->
+<head>
+    <!-- Characterset specified as UTF-8 -->
+	<meta charset="UTF-8"> 
+	
+    <!-- Webapge Title -->
+	<title>Database Management Skillset</title> 
+
+    <!-- Link External CSS Sheet -->
+    <link rel="stylesheet" href="CSS/portfolio.css">
+
+    <!-- Internal CSS Code -->
+    <style>
+        /* Specific CSS Style for Introductory paragraph */
+        .skills-list { 
+            color: black;
+			font-size: 1.15em;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+	<header>
+		<h1>Database Management Skillset</h1>
+		<img src="Images/Headshot.jpg" alt="My headshot" class="headshot">
+		<img src="Images/logo.png" alt="My Logo" class="logo">
+	</header>
+
+        <!-- Navigation Bar -->
+        <nav>
+        <button class="nav-button" onclick="location.href='bb_a4_index.html'">Home</button>
+        <button class="nav-button" onclick="location.href='bb_a4_resume.html'">Resume</button>
+        <button class="nav-button" onclick="location.href='bb_a4_about.html'">About</button>
+        <button class="nav-button" onclick="location.href='bb_a4_web_skills.html'">Web Skills</button> <!-- Custom colour to denote current page -->
+                <button class="nav-button" style="background-color: orangered;"
+            onclick="window.open('bb_a4_newsletter_signup.html','page','location=0,toolbar=0,resizable=no,height=640px,width=720px')">Signup to the Newsletter</button>  <!-- Custom colour to denote newsletter page -->
+    </nav>
+    <nav>
+        <button class="nav-button" onclick="location.href='bb_a4_cybersecurity.html'">Cybersecurity</button>
+        <button class="nav-button" onclick="location.href='bb_a4_data_visualisation.html'">Data Visualisation</button>
+        <button class="nav-button" onclick="location.href='bb_a4_database_management.html'" style="background-color: coral;" >Database Management</button>
+        <button class="nav-button" onclick="location.href='bb_a4_website_development.html'">Website Development</button>
+    </nav>
+        <!-- Main Content Section -->
+        <div class="container">
+            <section>
+                <h3>Why Database Management?</h3>
+                <p>
+                    Financial companies rely on accurate, secure databases to store client information and transaction records.
+                </p>
+                <p>
+                    I have developed key skills in managing databases to ensure financial data integrity and security.
+                </p>
+            </section>
+            <section>
+                <h3>Key Database Skills</h3>
+                <ul>
+                    <li>Designing tables for customer and transaction data</li>
+                    <li>Writing basic SQL queries to retrieve financial information</li>
+                    <li>Backing up databases to prevent data loss</li>
+                    <li>Ensuring only authorised staff can access sensitive data</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Prior Project: Client Account Database</h3>
+                <p>
+                    I set up a MySQL database for client accounts, allowing our team to quickly look up balances and transaction history.
+                </p>
+            </section>
+        </div>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 - Blake Brouff. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

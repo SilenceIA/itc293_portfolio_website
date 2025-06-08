@@ -1,0 +1,93 @@
+<!--
+    Document: bb_a4_newsletter_signup.html
+    Author: Blake Brouff
+	Student ID: 11596992
+    Date: May 2025
+    Description: Home page for the fictitious financial web developer portfolio website.
+-->
+	
+<!DOCTYPE html>  <!--Define the HTML Doc Type -->
+<html lang="en"> <!--Define the HTML language -->
+
+<!-- Head section of the HTML document -->
+<head>
+    <!-- Characterset specified as UTF-8 -->
+	<meta charset="UTF-8"> 
+	
+    <!-- Webapge Title -->
+	<title>Newsletter Signup</title> 
+
+    <!-- Link External CSS Sheet -->
+    <link rel="stylesheet" href="CSS/portfolio.css">
+</head>
+
+
+<!-- Newsletter Page body-->
+<body onload="showWelcomeMessage()"> <!-- show welcome message on load -->
+    <!-- Header section -->
+    <h1>Future Finance Development Corp. - Newsletter Signup</h1>
+    
+    <!-- Newsletter Form section-->
+     <section class="newsletter_form">
+        <form action="http://csusap.csu.edu.au/cgi-bin/echo_form" method="post" onsubmit="return validateForm();"> <!-- post form on submission by running validation check -->
+            <p class="newsletter_bold">Please fill out all fields marked <span class="important-text">required</span>.</p>
+
+            <!-- Capture Name Information-->
+            <h4>Personal Information</h4>
+            <label>First Name*:
+                <input type="text" name="firstName" id="firstName" maxlength="60" required> <!--input field -->
+            </label><span class="important-text">(required)</span>
+            <br>
+            <br>
+            <label>Last Name*:
+                <input type="text" name="lastName" id="lastName" maxlength="60" required>  <!--input field -->
+            </label><span class="important-text">(required)</span>
+            <br>
+            <br>
+
+            <!-- Capture email address -->
+            <label>Email Address*:
+                <input type="email" name="email" id="email" maxlength="60" required>  <!--input field -->
+            </label><span class="important-text">(required)</span>
+            <br>
+            <br>
+
+            <!-- Use fieldset for Age Range -->
+            <fieldset>
+                <legend>Age Range*:</legend><br>
+                <label><input type="radio" name="age" value="15-25"> 15-25</label><br>
+                <label><input type="radio" name="age" value="26-35"> 26-35</label><br>
+                <label><input type="radio" name="age" value="36-45"> 36-45</label><br>
+                <label><input type="radio" name="age" value="46-55"> 46-55</label><br>
+                <label><input type="radio" name="age" value="55+"> 55+</label>
+            </fieldset>
+            <br>
+            <br>
+
+            <!-- Use fieldset for financial service interest-->
+            <h4>Your Interests</h4> 
+            <fieldset >
+                <legend>Which Future Finance services are you interested in?</legend><br>
+                <label><input type="checkbox" name="service" value="cybersecurity">Cybersecurity Solutions</label><br>
+                <label><input type="checkbox" name="service" value="dataVisualisation">Data Visualisation Services</label><br>
+                <label><input type="checkbox" name="service" value="databaseManagement">Database Management Products</label><br>
+                <label><input type="checkbox" name="service" value="websiteBuilding">Website Building</label><br>
+                <label><input type="checkbox" name="service" value="consultation">Professional Consultation</label><br>
+            </fieldset>
+            <br>
+            <br>
+
+            <!--Input for comments and questions -->
+            <label>Comments:<br>
+                <textarea name="comments" cols="60" rows="3" placeholder="Write any comments or questions here."></textarea>
+            </label>
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </section>
+
+    <!-- JavaScript for form validation and welcome message -->
+    <script src="Javascript/newsletter.js"></script>
+</body>
+</html>

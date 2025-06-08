@@ -1,0 +1,142 @@
+<!--
+    Document: bb_a4_resume.html
+    Author: Blake Brouff
+	Student ID: 11596992
+    Date: May 2025
+    Description: Resume webpage for the fictitious financial web developer portfolio website.
+-->
+	
+<!DOCTYPE html>  <!--Define the HTML Doc Type -->
+<html lang="en"> <!--Define the HTML language -->
+
+<!-- Head section of the HTML document -->
+<head>
+    <!-- Characterset specified as UTF-8 -->
+	<meta charset="UTF-8"> 
+	
+    <!-- Webapge Title -->
+	<title>Blake's Resume</title> 
+
+    <!-- Link External CSS Sheet -->
+    <link rel="stylesheet" href="CSS/portfolio.css">
+
+    <!-- Internal CSS Code -->
+    <style>
+        /* Specific CSS Style for Introductory paragraph */
+        .resume-section {
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            background-color: lightgrey;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Portfolio of Blake Brouff</h1>
+		<img src="Images/Headshot.jpg" alt="Blake Brouff" class="headshot">
+		<img src="Images/logo.png" alt="My Logo" class="logo">
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <button class="nav-button" onclick="location.href='bb_a4_index.html'">Home</button>
+        <button class="nav-button" style="background-color: coral;" onclick="location.href='bb_a4_resume.html'">Resume</button>  <!-- Custom colour to denote current page -->
+        <button class="nav-button" onclick="location.href='bb_a4_about.html'">About</button>
+        <button class="nav-button" onclick="location.href='bb_a4_web_skills.html'">Web Skills</button>
+        <button class="nav-button" style="background-color: orangered;"
+            onclick="window.open('bb_a4_newsletter_signup.html','page','location=0,toolbar=0,resizable=no,height=640px,width=720px')">Signup to the Newsletter</button>  <!-- Custom colour to denote newsletter page -->
+    </nav>
+    <nav>
+        <button class="nav-button" onclick="location.href='bb_a4_cybersecurity.html'">Cybersecurity</button>
+        <button class="nav-button" onclick="location.href='bb_a4_data_visualisation.html'">Data Visualisation</button>
+        <button class="nav-button" onclick="location.href='bb_a4_database_management.html'">Database Management</button>
+        <button class="nav-button" onclick="location.href='bb_a4_website_development.html'">Website Development</button>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container">
+		<!-- Section for professional summary -->
+        <section class="resume-header">
+            <h2>Professional Summary</h2>
+            <p>
+                I am a highly skilled web development professional with years experience in building solutions for FInancial clients, business and enterprises. I have an in-depth understanding of the Finance sector, it's clients and it's targets.
+            </p>
+        </section>
+
+		<!--Section for Contact Information -->
+        <section class="resume-section">
+            <h3>Contact Information</h3>
+            <div class="contact-info">
+                <p>Email: <a href="blake@financialfictitious.com.au">blake@financialfictitious.com.au</a></p>
+                <p>Phone: <a href="tel:+123456789">+123456789</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/blake.fictitious" target="https://www.linkedin.com/">www.linkedin.com/in/blake.fictitious</a></p>
+            </div>
+        </section>
+		
+		<!-- Section for Education History -->
+        <section class="resume-section">
+            <h3>Education</h3>
+            <ol>
+                <li>Bachelor of Information Technology, Charles Stuart University</li>
+                <li>Degree in web design and development</li>
+            </ol>
+        </section>
+		
+		<!-- Section for key skills -->
+        <section class="resume-section">
+            <h3>Skills</h3>
+            <ul>
+                <li>Web development</li>
+                <li>Programming</li>
+                <li>Website management</li>
+                <li>Managing Finance clientel.</li>
+            </ul>
+        </section>
+		
+		<!-- Section for my Education -->
+		<h2>Qualifications and Learnings</h2>
+		<table  style="margin:auto; width:90%; text-align:center;">
+		  <thead>
+			<tr> 
+			  <th>Qualification</th>
+			  <th>Institution</th>
+			  <th>Year Completed</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr>
+			  <td>Bachelor of Information Technology (Web Development)</td>
+			  <td>Australian Institute of Technology</td>
+			  <td>2023</td>
+			</tr>
+			<tr>
+			  <td>Diploma of Financial Services</td>
+			  <td>Finance Skills College</td>
+			  <td>2021</td>
+			</tr>
+			<tr>
+			  <td>Certificate IV in Front-End Web Design</td>
+			  <td>Creative Digital Academy</td>
+			  <td>2020</td>
+			</tr>
+			<tr>
+			  <td>Short Course: Secure Web Applications for Finance</td>
+			  <td>Online Learning Hub</td>
+			  <td>2019</td>
+			</tr>
+		  </tbody>
+		</table>
+		<p></p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 - Blake Brouff. All rights reserved.</p>
+    </footer>
+</body>
+</html>
