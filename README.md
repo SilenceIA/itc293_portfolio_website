@@ -1,2 +1,2 @@
-# itc293_portfolio_website
-ITC293 - Porfolio Website
+# ITC293 - Portfolio Website
+Uploaded files for the ITC293 Asesssment 4 Portfolio Website for Charles Stuart University.
